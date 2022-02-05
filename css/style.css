@@ -9,12 +9,16 @@ body{
     --body-backround:#fff;
     --text-color: #22343d;
     --link-color:#173a56;
+    --background-img: url('../imgs/Bg.png');
+
 
 }
 .dark{
     --body-backround:#1f2e35;
     --text-color:#fff;
     --link-color:#fff;
+    --background-img: url('../imgs/bg-night.png');
+
 }
 ul{
     list-style: none;
@@ -33,6 +37,8 @@ a{
     top: 0;
     left: 50%;
     transform: translate(-50%);
+    background-color: var(--body-backround);
+    z-index: 100000 ;
 }
 .header__logo{
     position: absolute;
@@ -372,4 +378,117 @@ a{
     }
 
 
+}
+@media screen and (max-width:370px) {
+    .site-hero__title{
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .site-hero__discribtion{
+        font-size: 16px;
+    }
+}
+
+
+/* jamoliddin finished hero section and started product section */
+
+
+.product{
+    width: 100%;
+    background-color: var(--body-backround);
+    background-image: var(--background-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    padding: 110px 0;
+}
+.product .container{
+    width: 1140px;
+    padding: 0 20px;
+}
+.product__title{
+    width: 535px;
+    margin: 0 auto;
+    margin-bottom: 65px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: var(--text-color);
+
+}
+.product__list{
+    margin-bottom: 60px;
+    justify-content: center;
+}
+.product__items{
+    width: 240px;
+}
+.product__items-img{
+    margin-bottom: 30px;
+}
+.product__items-title{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: var(--text-color);
+    margin-bottom: 12px;
+}
+.product__items-desc{
+    font-size: 16px;
+    line-height: 26px;
+    color: #22343D;
+    color: var(--text-color);
+
+}
+.product__box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.product__btn{
+    display: inline-block;
+    background: #02897a;
+    border: solid 2px transparent;
+    border-radius: 4px;
+    padding: 15px 33px;
+    transition: 0.5s; 
+}
+.product__btn-link{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    transition: 0.5s;
+
+}
+.product__btn:hover{
+    background-color: #fff;
+    border: solid 2px #02897a;
+}
+.product__btn:hover .product__btn-link{
+    color: #02897a;
+}
+
+
+
+@media  screen and (max-width:992px) {
+    .product{
+        background-size: contain;
+    }
+    .product .container{
+        width: 100%;
+        
+    }
+    .product__title{
+        width: 100%;
+    }
+    .product__list{
+        width: 100%;
+        gap: 40px;
+    }
+    .product__items{
+        text-align: center;
+        padding: 10px;
+    }
 }
