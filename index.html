@@ -4,12 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/column.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>MyProduct</title>
 </head>
 <body>
-    
+    <section class="hero">
+        <header class="site-head header">
+            <div class="container">
+                <div class="row middle between">
+                <div class="header__logo-box">
+                    <a href="#" class="header__logo-link"><img src="./imgs/logo-night.svg" alt="logo" class="header__logo logo-night" id="logo"></a>
+                    <a href="#" class="header__logo-link"><img src="./imgs/logo-light.svg" alt="logo" class="header__logo logo-light" id="logoNight"></a>
+                </div>
+                <div class="header__list-box row middle" id="menubox">
+                    <ul class="header__nav-list row middle ">
+                        <li class="header__nav-items"><a href="#" class="header__nav-link">Product</a></li>
+                        <li class="header__nav-items"><a href="#" class="header__nav-link">Customers</a></li>
+                        <li class="header__nav-items"><a href="#" class="header__nav-link">Pricing </a></li>
+                        <li class="header__nav-items"><a href="#" class="header__nav-link">Resources</a></li>
+                        <li class="header__nav-items"><a href="#" class="header__nav-link">Sign In</a></li>
+                        <li class="header__nav-items"><a href="#" class="header__nav-link">Sign Up</a></li>
+                    </ul>
+                    <button class="header__btn" id="night"><img src="imgs/mood-light.svg" alt="mood-light" class="header__btn-icon"></button>
+                    
+                </div>
+                <button class="header__modal-menu" id="openMenubox"><i class="bx bx-menu"></i></button>
+                <button class="header__modal-x" id="closeMenubox"><i class="bx bx-x"></i></button>
+                </div>
+            </div>
+        </header>
+        <div class="site-hero">
+            <div class="container" id="zIndex">
+                <div class=" row middle">
+                    <div class="site-hero__inner">
+                        <h2 class="site-hero__title">Work at the speed
+of thought</h2>
+<p class="site-hero__discribtion">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
+<div class="site-hero__btns-box middle">
+    <div class="site-hero__btn"><a href="#" class="site-hero__btn-link">Get started</a></div>
+    <div class="site-hero__btn middle "><i class='bx bxs-right-arrow'></i><a href="#" class="site-hero__btn-link">Watch the Video</a></div>
+</div>
+                    </div>
+                    <img src="imgs/amico.svg" alt="amico" class="site-hero__img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script> 
 </body>
 </html>
