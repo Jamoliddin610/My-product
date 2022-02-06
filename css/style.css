@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap');
 
 body{
     font-family: 'Poppins',sans-serif;
@@ -871,6 +871,9 @@ a{
     cursor: pointer;
     
 }
+.strateg__items:hover .strateg__items-text{
+    color: #02897a;
+}
 .strateg__text-box{
     padding: 24px 30px 40px 24px;
 }
@@ -889,9 +892,32 @@ a{
     font-size: 24px;
     line-height: 40px;
     color: #22343d;
+    transition: 0.5s;
 }
 .strateg__items:nth-child(2) .strateg__items-text{
     color: #02897a;
+}
+.strateg__list{
+    margin-bottom: 65px;
+}
+.strateg__btns{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.starteg__btn{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #efefef;
+    border: none;
+    cursor: pointer;
+}
+.green{
+    background-color: #02897a;
 }
 @media screen and (max-width:992px) {
     .strateg{
@@ -904,5 +930,154 @@ a{
     .strateg__list{
         justify-content: center;
         gap: 40px;
+    }
+    .strateg__btns{
+        display: none;
+    }
+}
+/* jamoliddin finished strateg and started price section */
+
+.price{
+    width: 100%;
+}
+.price .container{
+    width: 1140px;
+    padding: 0 20px;
+    text-align: center;
+}
+.price__title{
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 51px;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+.price__desc{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+    margin-bottom:50px ;
+}
+.price__items{
+    width: 322px;
+    height: 456px;
+    background: #fff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 24px 0 32px 0 ;
+    text-align: center;
+}
+.price__content-title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    color: #22343d;
+    margin-bottom: 8px;
+}
+.price__about{
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 40px;
+    color: #22343d;
+    margin-bottom: 8px;
+}
+.price__num{
+    font-weight: bold;
+    font-size: 76px;
+    line-height: 100px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #02897A;
+    margin-right: 10px;
+}
+.price__dollar{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    color: #02897A;
+    margin-bottom: 4px;
+
+}
+.price__content-time{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1px;
+    color: #afafaf;
+}
+.price__content-price-box{
+    width: 100%;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+.price__link{
+    display: inline-block;
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    background: #02897A;
+    border: solid 2px transparent;
+    border-radius: 8px;
+    padding: 11px 19px ;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.price__link:hover{
+    color: #02897a;
+    background-color: #fff;
+    border-color: #02897a;
+}
+.price__content-pricec-text{
+    text-align: left;
+}
+.price__cabout{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 40px;
+    color: #22343D;
+}
+.price__items:nth-child(2){
+    background-color: #02897a;
+}
+.price__items:nth-child(2) .price__content-title{
+    color: #fff;
+}
+.price__items:nth-child(2) .price__cabout {
+    color: #fff;
+}
+.price__items:nth-child(2) .price__about {
+    color: #fff;
+}
+.price__items:nth-child(2) .price__num {
+    color: #fff;
+}
+.price__items:nth-child(2) .price__dollar {
+    color: #fff;
+}
+.price__items:nth-child(2) .price__link {
+    color: #02897a;
+    background-color: #fff;
+}
+.price__content-time{
+    color: #e0e0e0;
+}
+.price__items:nth-child(2) .price__link:hover {
+    color: #fff;
+    background-color: #02897a;
+    border-color: #fff ;
+}
+@media screen and (max-width:992px) {
+    .price .container{
+        width: 100%;
+    }
+    .price__list{
+        justify-content: center;
+        gap: 50px;
     }
 }
