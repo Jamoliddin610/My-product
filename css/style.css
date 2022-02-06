@@ -13,6 +13,7 @@ body{
     --link-color:#173a56;
     --background-img: url('../imgs/Bg.png');
     --background-second-img: url('../imgs/bg-second.png');
+    --border-color:#dedede;
 
 
 }
@@ -22,6 +23,8 @@ body{
     --link-color:#fff;
     --background-img: url('../imgs/bg-night.png');
     --background-second-img: url('../imgs/bg-second-img.png');
+    --border-color:#1f2e35;
+
 
 
 }
@@ -825,5 +828,77 @@ a{
     }
     .process__text-box{
         text-align: center;
+    }
+}
+
+
+/* jamoliddin finished process nad started strateg */
+
+.strateg{
+    width: 100%;
+    padding: 150px 0;
+}
+.strateg .container{
+    width: 1140px;
+    padding: 0 20px;
+}
+.strateg__title{
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 51px;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+.strateg__desc{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--text-color);
+    margin-bottom: 30px;
+
+}
+.strateg__items{
+    width: 348px;
+    height: 360px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.strateg__text-box{
+    padding: 24px 30px 40px 24px;
+}
+.strateg__about{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color:#22343d;
+    margin-bottom: 12px;
+}
+.strateg__bolder{
+    font-weight: 700;
+}
+.strateg__items-text{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    color: #22343d;
+}
+.strateg__items:nth-child(2) .strateg__items-text{
+    color: #02897a;
+}
+@media screen and (max-width:992px) {
+    .strateg{
+        padding: 100px 0 60px 0;
+    }
+    .strateg .container{
+        width: 100%;
+        text-align: center;
+    }
+    .strateg__list{
+        justify-content: center;
+        gap: 40px;
     }
 }
