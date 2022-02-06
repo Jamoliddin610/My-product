@@ -1081,3 +1081,170 @@ a{
         gap: 50px;
     }
 }
+
+
+/* jamoliddin finished price section and clients-opinion section */
+
+.clients-opin{
+    width: 100%;
+    padding: 150px 0;
+}
+.clients-opin .container{
+    width: 1140px;
+    padding: 0 20px;
+}
+.clients-opin__inner{
+    width: 538px;
+    text-align: center;
+    margin:  0 auto;
+    margin-bottom: 50px;
+}
+.clients-opin__title{
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+.clients-opin__desc{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: var(--text-color);
+}
+.clients-opin__items{
+    width: 328px;
+    height: 236px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 28px 26px 24px;
+}
+.clients-opin__img{
+    margin-bottom:16px ;
+}
+.clients-opin__text{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin-bottom: 16px;
+}
+.clients-opin__logo{
+    margin-right: 14px;
+}
+.clients-opin__name{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #02897A;
+}
+.clients-opin__person-desc{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+@media screen and (max-width:992px) {
+    .clients-opin{
+        padding: 100px 0;
+    }
+    .clients-opin .container{
+        width: 100%;
+    }
+    .clients-opin__list{
+        justify-content: center;
+        gap: 50px;
+    }
+}
+@media screen and (max-width:540px) {
+    .clients-opin__inner{
+        width: 100%;
+    }
+}
+@media screen and (max-width:400px) {
+    .clients-opin__items{
+        width: 
+        100%;
+    }
+}
+
+
+/* jamoliddin finished clients-opinion and started  adverts section */
+
+
+.adverts{
+    width: 100%;
+}
+.adverts .container{
+    width: 970px;
+    height: 345px;
+    background: #02897A;
+    border-radius: 32px;
+    padding: 50px 40px 56px 50px;
+}
+.adverts__inner{
+    width: 450px;
+}
+.adverts__text{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 151.4%;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.adverts__img{
+    position: relative;
+    top: -50px;
+    right: -50px;
+}
+.adverts__btn{
+    background: #fff;
+    border-radius: 8px;
+    padding: 12px 35px 8px;
+    display: inline-block;
+    border: solid 1px transparent;
+    transition: 0.5s;
+}
+.adverts__btn-link{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #02897A;
+    transition: 0.5s;
+
+}
+.adverts__btn:hover{
+    border-color: #fff;
+    background-color: #02897a;
+}
+.adverts__btn:hover .adverts__btn-link{
+    color: #fff;
+}
+@media screen and (max-width:950px) {
+    .adverts .container{
+        width: 100%;
+        height: 100%;
+        padding: 18px 22px 0;
+    }
+    .adverts .row{
+        flex-flow: column wrap;
+    }
+    .adverts__inner{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .adverts__img{
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+} 
