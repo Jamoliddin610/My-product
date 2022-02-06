@@ -2,6 +2,7 @@ let elMenuBox = document.getElementById('menubox');
 let elopenMenuBox = document.getElementById('openMenubox');
 let elcloseMenuBox = document.getElementById('closeMenubox');
 let ellogo = document.getElementById('logo');
+let ellogofoot = document.getElementById('logoFoot');
 let ellogonight = document.getElementById('logoNight');
 let elmood =document.getElementById('night');
 let elzindex = document.getElementById('zIndex')
@@ -9,6 +10,7 @@ let elzindex = document.getElementById('zIndex')
 elopenMenuBox.addEventListener('click',function(){
     elMenuBox.classList.add('show');
     ellogo.classList.add('hidelogo');
+    ellogofoot.classList.add('logofoot');
     elcloseMenuBox.classList.add('modalX');
     elzindex.classList.add('index')
 
@@ -16,6 +18,7 @@ elopenMenuBox.addEventListener('click',function(){
 elcloseMenuBox.addEventListener('click',function(){
     elMenuBox.classList.remove('show');
     ellogo.classList.remove('hidelogo');
+    ellogofoot.classList.remove('logofoot');
     elcloseMenuBox.classList.remove('modalX');
     elzindex.classList.remove('index')
 
