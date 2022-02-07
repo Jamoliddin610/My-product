@@ -1371,7 +1371,7 @@ a{
     color: #02897a;
 }
 .logofoot{
-    z-index: 1000;
+    display: none;
 }
 @media screen and (max-width:992px) {
     .site-foot{
