@@ -14,6 +14,9 @@ body{
     --background-img: url('../imgs/Bg.png');
     --background-second-img: url('../imgs/bg-second.png');
     --border-color:#dedede;
+    --faq-border-color:#e7e7e7;
+    --background-price-color:linear-gradient(180deg, #f7f7f7 0%, rgba(247, 247, 247, 0) 100%);
+
 
 
 }
@@ -24,6 +27,9 @@ body{
     --background-img: url('../imgs/bg-night.png');
     --background-second-img: url('../imgs/bg-second-img.png');
     --border-color:#1f2e35;
+    --faq-border-color:#474747;
+    --background-price-color:#22343D;
+
 
 
 
@@ -1387,7 +1393,11 @@ a{
     .foot__nav-lists{
     text-align: center;
     margin: 0;
+
     margin-bottom: 30px;
+    }
+    .foot__nav-box{
+        gap: 80px;
     }
     .foot__nav-items{
         text-align: center;
@@ -1407,6 +1417,12 @@ a{
         top:-10px;
         left: 50%;
         transform: translate(-50%);
+    }
+}
+@media screen and (max-width:400px) {
+    .foot__nav-box{
+        flex-direction: column;
+        gap: 0;
     }
 }
 
@@ -1593,7 +1609,7 @@ a{
 .enterprice{
     width: 100%;
     height: 320px;
-    background: linear-gradient(180deg, #f7f7f7 0%, rgba(247, 247, 247, 0) 100%);
+    background: var(--background-price-color);
     padding: 52px 0;
 }
 .enterprice .container{
@@ -1748,6 +1764,7 @@ a{
 /* jamoliddin finished product-price and started faq section */
 .faq{
     width: 100%;
+    margin-bottom: 150px;
 
 }
 .faq .container{
@@ -1772,6 +1789,7 @@ a{
 }
 .faq .row{
     margin-bottom: 25px;
+    flex-wrap: nowrap;
 }
 .faq__btn{
     display: block;
@@ -1782,7 +1800,7 @@ a{
     padding-bottom :24px ;
     margin-bottom: 16px;
     border: none;
-    border-bottom: 1px solid #e7e7e7;
+    border-bottom: 1px solid var(--faq-border-color);
     background-color: transparent;
     transition: 1s;
 }
@@ -1806,7 +1824,7 @@ a{
 .faq__icons{
     width: 12px;
     height: 2px;
-    background-color: #fff;
+    background-color: var(--body-backround);
     position: absolute;
     transition: 0.5s;
 }
@@ -1829,7 +1847,11 @@ a{
     transform: rotate(0deg) !important;
 }
 @media screen and (max-width:992px){
+    .faq{
+        margin-bottom: 100px;
+    }
     .faq .container{
         width: 100%;
     }
 }
+/* jamoliddin finished faq section and  */
