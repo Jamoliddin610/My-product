@@ -5,7 +5,15 @@ let ellogo = document.getElementById('logo');
 let ellogofoot = document.getElementById('logoFoot');
 let ellogonight = document.getElementById('logoNight');
 let elmood =document.getElementById('night');
-let elzindex = document.getElementById('zIndex')
+let elzindex = document.getElementById('zIndex');
+let elfirstFaq = document.getElementById('faqFirst');
+let elfirstMinus = document.getElementById('firstMinus');
+let elsecondFaq = document.getElementById('faqSecond');
+let elsecondMinus = document.getElementById('secondMinus');
+let elthirdFaq = document.getElementById('faqThird');
+let elthirdMinus = document.getElementById('thirdMinus');
+let elfourthFaq = document.getElementById('faqFourth');
+let elfourthMinus = document.getElementById('fourthMinus');
 
 elopenMenuBox.addEventListener('click',function(){
     elMenuBox.classList.add('show');
@@ -26,6 +34,24 @@ elmood.addEventListener('click', function(){
     ellogonight.classList.toggle('logofornight');
     elopenMenuBox.classList.toggle('white');
     ellogofoot.classList.toggle('logofoot');
+})
+elsecondFaq.addEventListener('click', function () {
+    elsecondFaq.classList.toggle('bigger');
+    elsecondMinus.classList.toggle('rotate');        
 
+})
+elthirdFaq.addEventListener('click', function () {
+    elthirdFaq.classList.toggle('bigger');
+    elthirdMinus.classList.toggle('rotate');        
+
+})
+elfirstFaq.addEventListener('click', function () {
+    elfirstFaq.classList.toggle('bigger');
+    elfirstMinus.classList.toggle('rotate');        
+
+})
+elfourthFaq.addEventListener('click', function () {
+    elfourthFaq.classList.toggle('bigger');
+    elfourthMinus.classList.toggle('rotate');        
 
 })

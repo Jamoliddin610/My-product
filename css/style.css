@@ -1256,6 +1256,7 @@ a{
 .site-foot{
     width: 100%;
     padding-top: 150px;
+    padding-bottom: 50px
 }
 .site-foot .container{
     width: 1150px;
@@ -1406,5 +1407,429 @@ a{
         top:-10px;
         left: 50%;
         transform: translate(-50%);
+    }
+}
+
+
+/* jamoliddin finished foot section and started sale section*/
+.sale {
+    width: 100%;
+    padding: 50px 0 150px;
+}
+
+.sale .container {
+    width: 1140px;
+    padding: 0 20px;
+    text-align: center;
+}
+.sale__name{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--text-color);
+    margin-bottom: 32px;
+}
+.sale__title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--text-color);
+    margin-bottom: 16px;
+}
+
+.sale__desc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+    margin-bottom: 50px;
+    
+}
+
+.sale__items {
+    width: 322px;
+    height: 456px;
+    background: #fff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 24px 0 32px 0;
+    text-align: center;
+}
+
+.sale__content-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    color: #22343d;
+    margin-bottom: 8px;
+}
+
+.sale__about {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 40px;
+    color: #22343d;
+    margin-bottom: 8px;
+}
+
+.sale__num {
+    font-weight: bold;
+    font-size: 76px;
+    line-height: 100px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #02897A;
+    margin-right: 10px;
+}
+
+.sale__dollar {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    color: #02897A;
+    margin-bottom: 4px;
+
+}
+
+.sale__content-time {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1px;
+    color: #afafaf;
+}
+
+.sale__content-sale-box {
+    width: 100%;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.sale__link {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    background: #02897A;
+    border: solid 2px transparent;
+    border-radius: 8px;
+    padding: 11px 19px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.sale__link:hover {
+    color: #02897a;
+    background-color: #fff;
+    border-color: #02897a;
+}
+
+.sale__content-salec-text {
+    text-align: left;
+}
+
+.sale__cabout {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 40px;
+    color: #22343D;
+}
+
+.sale__items:nth-child(2) {
+    background-color: #02897a;
+}
+
+.sale__items:nth-child(2) .sale__content-title {
+    color: #fff;
+}
+
+.sale__items:nth-child(2) .sale__cabout {
+    color: #fff;
+}
+
+.sale__items:nth-child(2) .sale__about {
+    color: #fff;
+}
+
+.sale__items:nth-child(2) .sale__num {
+    color: #fff;
+}
+
+.sale__items:nth-child(2) .sale__dollar {
+    color: #fff;
+}
+
+.sale__items:nth-child(2) .sale__link {
+    color: #02897a;
+    background-color: #fff;
+}
+
+.sale__content-time {
+    color: #e0e0e0;
+}
+
+.sale__items:nth-child(2) .sale__link:hover {
+    color: #fff;
+    background-color: #02897a;
+    border-color: #fff;
+}
+
+@media screen and (max-width:992px) {
+    .sale .container {
+        width: 100%;
+    }
+
+    .sale__list {
+        justify-content: center;
+        gap: 50px;
+    }
+}
+/* jamoliddin finished sale section and enterprice section */
+.enterprice{
+    width: 100%;
+    height: 320px;
+    background: linear-gradient(180deg, #f7f7f7 0%, rgba(247, 247, 247, 0) 100%);
+    padding: 52px 0;
+}
+.enterprice .container{
+    width: 1140px;
+    padding: 0 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+.enterprice__title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--text-color);
+    margin-bottom: 16px;
+}
+.enterprice__question{
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 51px;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+.enterprice__desc{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--text-color);
+    margin-bottom: 32px;
+}
+.enterprice__btn{
+    display: inline-block;
+    background: #02897a;
+    border-radius: 8px;
+    padding: 11px 18px;
+}
+.enterprice__btn-link{
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+}
+@media screen and (max-width:992px) {
+    .enterprice{
+        height: 100%;
+    }
+    .enterprice .container{
+        width: 100%;
+    }
+    .enterprice__question{
+        margin-bottom: 40px;
+    }
+}
+
+/* jamoliddin finished enterprice section and started product section */
+.product-price{
+    width: 100%;
+    padding: 150px 0;
+}
+.product-price .container{
+    width: 1170px;
+    padding: 0 20px;
+    text-align: center;  
+}
+.product-price__title-content{
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 51px;
+    color: var(--text-color);
+    margin-bottom: 55px;
+}
+.product-price__inner{
+    width: 540px;
+    text-align: left;
+}
+.product-price__img-box{
+    width: 528px;
+    height: 392px;
+    position: relative;
+}
+.product-price__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.product-price__reponse-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.product-price__content-title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+}
+.product-price__title-img{
+    width: 50px;
+    height: 50px;
+
+    margin-right: 14px;
+}
+.product-price__title-box{
+    margin-bottom: 16px;
+}
+.product-price__text{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+@media screen and (max-width:992px) {
+    .product-price{
+        padding: 100px 0;
+    }
+    .product-price .container{
+        width: 100%;
+    }
+    .product-price > .row{
+        flex-flow: column wrap;
+    }
+    .product-price__img{
+        display: none;
+    }
+    .product-price__reponse-img{
+        display: block;
+    }
+    .product-price__img-box{
+        width: 100%;
+        /* height: 100%; */
+        margin-bottom: 40px;
+    }
+    .product-price__inner{
+        width: 100%;
+    }
+}
+
+
+/* jamoliddin finished product-price and started faq section */
+.faq{
+    width: 100%;
+
+}
+.faq .container{
+    width: 960px;
+    padding: 0 20px;
+    text-align: center;
+}
+.faq__title{
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 51px;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+.faq__desc{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--text-color);
+    margin-bottom: 50px;
+
+}
+.faq .row{
+    margin-bottom: 25px;
+}
+.faq__btn{
+    display: block;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    padding-top: 6px;
+    padding-bottom :24px ;
+    margin-bottom: 16px;
+    border: none;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: transparent;
+    transition: 1s;
+}
+.faq__question{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--text-color);
+}
+.faq__icon-box{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #02897A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+    position: relative;
+}
+.faq__icons{
+    width: 12px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    transition: 0.5s;
+}
+.faq__icons:nth-child(2){
+    transform: rotate(90deg);
+}
+.faq__answer{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+    text-align: left;
+
+}
+
+.bigger{
+    height: 100%;
+}
+.rotate{
+    transform: rotate(0deg) !important;
+}
+@media screen and (max-width:992px){
+    .faq .container{
+        width: 100%;
     }
 }
